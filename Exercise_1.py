@@ -3,28 +3,28 @@
 
 class myStack:
     def __init__(self):
-        self.stack = []  # initializing an empty list for stack
+        self.stack = []  
 
     def isEmpty(self):
-        return len(self.stack) == 0  # checking if the stack is empty
+        return len(self.stack) == 0  
 
     def push(self, item):
-        self.stack.append(item) # appending the item to the stack
+        self.stack.append(item) 
 
     def pop(self):
         if not self.isEmpty():
-            return self.stack.pop() #`pop` method removes the last element from the list and returns it
+            return self.stack.pop() 
         else:
             return "Stack is empty"
 
     def peek(self):
-        if not self.isEmpty():    # checking if the stack is empty
-            return self.stack[-1]  # returning the last element from the stack
+        if not self.isEmpty():    
+            return self.stack[-1]  
         else:
             return "Stack is empty"
 
     def size(self):
-        return len(self.stack)   # returning the length of the stack
+        return len(self.stack)   
 
     def show(self):
         return self.stack   # returning the stack
